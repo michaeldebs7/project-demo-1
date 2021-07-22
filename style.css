@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0%;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+h2 {
+  text-transform: capitalize;
+}
+header {
+  background: #283593;
+}
+.logo > h1 {
+  color: white;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  margin: 0 5vw;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+nav {
+  width: 30vw;
+}
+nav > ul > li > a {
+  display: block;
+  transition: all 300ms ease-out;
+}
+nav > ul > li > a:hover {
+  color: #fff;
+  transform: rotate(6deg);
+  font-size: 1.5rem;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+.list-items {
+  color: white;
+  text-transform: capitalize;
+}
+/* subheader */
+.subheader {
+  background: #9fa8da;
+  padding: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.subheading-wrapper {
+  max-width: 900px;
+}
+.subheading-wrapper > h2 {
+  font-weight: 300;
+  font-size: 3rem;
+}
+.subheading-wrapper > a:hover {
+  color: #1a237e;
+}
+.subheading-wrapper > a {
+  background: #283593;
+  padding: 10px;
+  border-radius: 9px;
+  color: #fff;
+}
+/* main */
+main {
+  background: #e8eaf6;
+  display: flex;
+  justify-content: center;
+}
+.main-wrapper {
+  width: 80vw;
+  padding: 5rem 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+section > h3 {
+  font-size: 1.6rem;
+}
+section > p {
+  font-size: 1.2rem;
+}
+section {
+  margin: 1rem;
+  max-width: 500px;
+}
+/* footer */
+footer {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
+.name {
+  color: rgb(236, 236, 236);
+}
+/* media */
+@media all and (max-width: 450px) {
+  section > p {
+    text-align: center;
+  }
+  section > h3 {
+    text-align: center;
+  }
+  .main-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 0 5rem 0;
+  }
+  ul {
+    margin-top: 1rem;
+    display: grid;
+    grid-template: 1fr 2fr / 1fr 1fr;
+  }
+}
