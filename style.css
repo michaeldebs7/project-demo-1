@@ -84,7 +84,7 @@ main {
   padding: 5rem 0;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 section > h3 {
   font-size: 1.6rem;
